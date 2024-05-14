@@ -1,0 +1,59 @@
+.info_itens{
+    color: white;
+    text-align: center;
+}
+
+.itens{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+
+.itens > div{
+    background-color: #0a0a0a;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px #13ff8c;
+    width: 25%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.itens > div > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.itens > div > button{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: background-color 0.7s,transform 0.7s;
+}
+
+.itens > div > button:hover{
+    background-color: #13ff8c;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1100px) {
+    .itens{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .itens > div {
+        width: 80%;
+    }
+}
